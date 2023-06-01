@@ -1,10 +1,20 @@
 body{
     margin: 0;
     height: 1900px;
-    background: #2a2734;
+    background: #b5aeae;
     text-align: center;
     font-family: sans-serif;
     color:#fefefe;
+}
+h1{
+    font-size: 70px;
+    color: #050505;
+    width: 80%;
+    position: relative;
+    margin-left: 220px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fefefe;
 }
 .container{
     position: relative;
@@ -94,8 +104,12 @@ span {
     bottom: 5%;
     left: 50%;
     transform: translate(-50%);
-    border-radius: 10px;
-    border: 3px solid #d01212;
+    border-radius: 15px;
+    border: 3px solid #121111;
+    display:none;
+}
+.cookies-msg.mostrar{
+    display: block;
 }
 .cookies-txt{
     color: black;
@@ -112,5 +126,21 @@ span {
     font-weight: 700;
     font-size: 18px;
     box-shadow: 3px 3px 5px rgb(9, 36, 171);
+    cursor: pointer;
+    transition: .2s;
 }
 
+.cookies-msg .cookies-btn button:hover{
+    transform: scale(0.9);
+}
+.cookies-img{
+    padding: 5px;
+    display: flex;
+
+}
+.cookies-img h6{
+    color: #050505;
+    padding-left: 10px;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
